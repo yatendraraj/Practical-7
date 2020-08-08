@@ -3,179 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical-7</title>
+    <title>Layout</title>
     <style>
-        header{
-            text-align: center;
-            color: white;
-            background-color: gray;
-            font-size: 40px;
-            border: 1px solid gray;
-            padding: 15px;
-            margin-bottom: 15px;
+        *{
+            padding: 0;
+            margin: 0;
         }
-        #box1{
+        p {
+            text-align: center;
+            color: black;
+            font-size: xx-large;
+            margin-bottom: 5px;
+        }
+    
+
+        .maincontainer {
+            padding: 10px;
+            width: 1200px;
+            margin: 0px auto;
+
+        }
+        .header {
+            height: 60px;
+            border-radius: 3px;
+            background-color: lightgray;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 40px;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            }
+        .banner {
+            width: 1200px;
+            height: 500px;
+            border-radius: 3px;
+            background-color: lightskyblue;
             font-size: 40px;
-            background-color: skyblue;
-            height: 100vh;
-        }
-        div h1{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            margin-bottom: 15px;
         }
-        .circle{
-            display: block;
-            float: left;
-            margin: 35px;
-            height: 277px;
-            border: goldenrod 1px solid;
-            width: 20%;
-            border-radius: 50%;
-            background-color: goldenrod;
+        .section1 {
+            
+            text-align: center;
+            color: black;
+            font-size: x-large;
+            font-weight: bold;
+            padding: 10px;
+            
+
+
+
         }
-        #left-side{
-         width: 50%;
-        height: 100vh;
-        float: left;
-        background-color: gray;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: white;
-        margin-right: 10px;
+        .pic1 {
+            width: 200px;
+            height: 200px;
+        
+            border-radius: 100px;
+            margin: 20px;
+            background-color: yellow;
+            display: inline-block;
         }
-        #right-side{
-            width: 48%;
-            float: right;
+        .pic2 {
+            width: 200px;
+            height: 200px;
+            
+            border-radius: 100px;
+            margin: 20px;
+            background-color: yellow;
+            display: inline-block;
         }
-        #article-1{
-        width: 100%;
-        height: 241px;
-        background-color: orangered;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: white;
+        .pic3 {
+            width: 200px;
+            height: 200px;
+            
+            border-radius: 100px;
+            margin: 20px;
+            background-color: yellow;
+            display: inline-block;
         }
-        #article-2{
-        width: 100%;
-        height: 241px;
-        background-color: orangered;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: white; 
+        .pic4 {
+            width: 200px;
+            height: 200px;
+        
+            border-radius: 100px;
+            margin: 20px;
+            background-color: yellow;
+            display: inline-block;
         }
-        #article-3{
-        width: 100%;
-        height: 241px;
-        background-color: orangered;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: white;
+        .section2 {
+            text-align: center;
+            color: black;
+            font-size: x-large;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 15px;
+
         }
-        #box3::after{
+        .section2:after{
             content: '';
             display: block;
             clear: both;
         }
-        .sec1{
-            width: 20%;
+        .leftmain {
+            width: 50%;
+            height: 600px;
+            background-color: darkgray;
             float: left;
-            background-color: red;
-            height: 400px;
-            margin: 37px;
-        }
-        .sec2{
-            width: 20%;
-            float: left;
-            background-color: red;
-            height: 400px;
-            margin: 37px;
-        }
-        .sec3{
-            width: 20%;
-            float: left;
-            background-color: red;
-            height: 400px;
-            margin: 37px;
-        }
-        .sec4{
-            width: 20%;
-            float: left;
-            background-color: red;
-            height: 400px;
-            margin: 37px;
-        }
-        footer{
             font-size: 40px;
             color: white;
-            background-color: violet;
-            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        
+        }
+        .rightside{
+            width: 48%;
+            height: 600px;
+            float: right;
+            
+            
+            }
+        .article1 {
+            width: 100%;
+            height: 190px;
+            margin-bottom: 10px;
+            background-color: darkseagreen;
+            font-size: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
-        h1{
+        .article2 {
+            width: 100%;
+            height: 190px;
+            margin-bottom: 10px;
+            background-color: darkseagreen;
+            font-size: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
+        .article3 {
+            width: 100%;
+            height: 200px;
+            background-color: darkseagreen;
+            font-size: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .section3 {
+            width: 98%;
+            height: 400px;
+            text-align: center;
+            color: black;
+            font-size: x-large;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 15px;
+
+        }
+        .container1 {
+            width: 20%;
+            height: 380px ;
+            background-color: chartreuse;
+            display: inline-block;
+            margin: 20px;
+        }
+        .footer {
+            height: 60px;
+            border-radius: 3px;
+            background-color: lightgray;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+        
+
+
+
+        
     </style>
+
 </head>
 <body>
-    <header>
-        Header
-    </header>
-    <div id="box1">
-        Banner
-    </div>
-    <div id="box2">
-        <h1>Section-1</h1>
-        <div class="circle">
+    <div class="maincontainer">
+        <div class="header">Header</div>
+        <div class="banner">Banner</div>
+        <p>Section-1</p>
+        <div class="section1">
+            <div class="pic1"></div>
+            <div class="pic2"></div>
+            <div class="pic3"></div>
+            <div class="pic4"></div>
+        </div>
+        <p>Section-2</p>
+        <div class="section2">
+            <div class="leftmain">Main content</div>
+            <div class="rightside">
+                <div class="article1">Article-1</div>
+                <div class="article2">Article-2</div>
+                <div class="article3">Article-3</div>
+            </div>
+            
+        </div>
+        <p>Section-3</p>
+        <div class="section3"> 
+            <div class="container1"></div>
+            <div class="container1"></div>
+            <div class="container1"></div>
+            <div class="container1"></div>
 
         </div>
-        <div class="circle">
-
-        </div>
-        <div class="circle">
-
-        </div>
-        <div class="circle">
-
-        </div>
+        <div class="footer">Footer</div>
     </div>
-    <div id="box3">
-        <h1>Section-2</h1>
-        <div id="left-side">
-            Main Content
-        </div>
-        <div id="right-side">
-            <div id="article-1">Article-1</div>
-            <div id="article-2">Article-2</div>
-            <div id="article-3">Article-3</div>
-        </div>
-    </div>
-    <br>
-    <h1>Section-3</h1>
-    <div id="box4">
-        <div class="sec1"></div>
-        <div class="sec2"></div>
-        <div class="sec3"></div>
-        <div class="sec4"></div>
-    </div>
-    <div id="box5">
-        <h1>Section-4</h1>
-        <footer>
-            Footer
-        </footer>
-    </div>
+    
 </body>
 </html>
